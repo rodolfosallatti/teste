@@ -12,6 +12,7 @@ Things you may want to cover:
 * Configuration
 
 * Database creation
+  mysql -u root -p -h localhost  < teste_icasei.sql
 
 * Database initialization
 
