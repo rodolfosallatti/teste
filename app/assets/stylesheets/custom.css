@@ -1,0 +1,41 @@
+body {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  /* background-repeat: no-repeat; */
+  background-image: url(/assets/wallpaper.jpg);
+}
+.form-new {
+position: relative;
+padding: 1rem;
+margin: 1rem -15px 0;
+border: solid #dcecfb;
+border-radius: 15px;
+max-width: 400px;
+margin-right: auto;
+margin-left: auto;
+border: 1px solid rgba(255,255,255,0.3);
+}
+.title-container {
+    display: flex;
+    justify-content: center;
+}
+.container h2 {
+    color: white;
+    font-family: 'Kaushan Script';
+}
+label {
+    color: white;
+    font-family: 'Kaushan Script';
+}
+.btn-primary{
+  background-color: #3f9cc5;
+  border-color: #3f9cc5;
+}
+.badge {
+    font-size: 100%;
+    margin: 3px;
+  }
+  #about {
+      padding: 0px 0;
+  }

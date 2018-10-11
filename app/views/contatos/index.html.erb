@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="title-container">
+    <h2>Lista de Contatos</h2>
+  </div>
+  <div class="tbl-header">
+    <table>
+      <thead>
+        <!-- <th>id do Usuário</th> -->
+        <th>Nome</th>
+        <th>E-mail</th>
+        <th>Data Cadastro</th>
+        <th>Ações</th>
+      </thead>
+    </table>
+  </div>
+    <div class="tbl-content">
+      <table>
+        <tbody>
+          <% @contatos.each do |contato| %>
+            <tr>
+              <!-- <th scope="row"><%= contato.id %></th> -->
+              <th scope="row"><%= contato.nome %></th>
+              <td><%= contato.email %></td>
+              <td><%= contato.data_cadastro.strftime("%d/%m/%Y - %H:%M") %></td>
+              <td>
+                <!-- <%= link_to "Visualizar", contato_path(contato), class: "badge badge-info" %> -->
+                <%= link_to "Editar", edit_contato_path(contato), class: "badge badge-warning" %>
+                <%= link_to "Excluir", contato, method: :delete, data: {confirm: "Deseja excluir este contato?"},  class: "badge badge-danger" %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+</div>

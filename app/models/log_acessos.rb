@@ -1,0 +1,2 @@
+class LogAcessos < ApplicationRecord
+end
