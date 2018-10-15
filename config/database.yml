@@ -12,7 +12,7 @@ default: &default
   timeout: 10
   reconnect: true
   username: root
-  password: Luiz@14122016
+  password: asdqwe123
   host: localhost
   database: teste_icasei
   schema: teste_icasei

@@ -33,9 +33,17 @@ label {
   border-color: #3f9cc5;
 }
 .badge {
-    font-size: 100%;
-    margin: 3px;
-  }
-  #about {
-      padding: 0px 0;
-  }
+  font-size: 100%;
+  margin: 3px;
+}
+#about {
+  padding: 0px 0;
+}
+div#error_explanation {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+div#error_explanation li {
+    color: red;
+}

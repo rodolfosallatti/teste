@@ -12,8 +12,9 @@ class ContatosController < ApplicationController
     @contatos = Contato.new(contato_params)
     @contatos.email.downcase
     @contatos.data_cadastro = DateTime.now
-    if @contatos.save
-        redirect_to contatos_path
+    if @contatos.valid?
+      @contatos.save
+      redirect_to contatos_path
     else
       render :new
     end
