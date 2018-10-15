@@ -29,6 +29,15 @@
       <div class="actions">
         <%= c.submit "Salvar", class: "btn btn-primary" %>
       </div>
+			<% if @contatos.errors.any? %>
+				<div id="error_explanation">
+					<ul>
+						<% @contatos.errors.each do |title,message| %>
+							<li><%= message %></li>
+						<% end %>
+					</ul>
+				</div>
+			<% end %>
     <% end %>
   </div>
 </div>

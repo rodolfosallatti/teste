@@ -6,6 +6,7 @@
     <table>
       <thead>
         <!-- <th>id do Usuário</th> -->
+        <th>Linhas</th>
         <th>UUID</th>
         <th>Pagina</th>
         <th>Data Acesso</th>
@@ -15,8 +16,9 @@
     <div class="tbl-content">
       <table>
         <tbody>
-          <% @acessos.each do |acesso| %>
+          <% @acessos.each_with_index do |acesso,index| %>
             <tr>
+              <td><%= index+1 %></td>
               <th scope="row"><%= acesso.uuid %></th>
               <td><%= acesso.page %></td>
               <td><%= acesso.sysdate.strftime("%d/%m/%Y - %H:%M") %></td>

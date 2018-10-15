@@ -32,6 +32,7 @@ Things you may want to cover:
 * How to run the test suite
 
 * Deployment instructions (MACOS)
+
   - Copy the project to a folder of your choice (project link: https://github.com/rodolfosallatti/teste.git )
   - install the 'bundle' through the terminal with the following command 'gem install bundler'
   - install or update the 'ruby ​​version' to 2.5.1
