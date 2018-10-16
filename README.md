@@ -16,8 +16,6 @@ Things you may want to cover:
    - xcode
    - bundler
 
-* Configuration
-
 * Database creation
     access the project folder on the terminal and run the command to create the database 'mysql -u root -p -h localhost  < teste_icasei.sql (requires the bank password: asdqwe123)
 
